@@ -1,0 +1,50 @@
+<html>
+<head>
+<STYLE>
+BODY{background-image:URL('BG.JPG');background-repeat:no-repeat; Background-size:100% 100%;}
+table{border-radius:30px; BACKGROUND:transparent;}
+</style>
+<script type="text/javascript">
+function validation()
+{
+if( document.login.uname.value =="")
+{
+  alert("Please provide your name!" );
+  document.myForm.uname.focus() ;
+  return false;
+}
+if(document.login.pwd.value =="")
+{  
+  alert("enter password plz.");  
+  return false;  
+}  
+}
+</script>
+</HEAD>
+<BODY><BR><BR>
+<form name="login" method="post" onsubmit="return validation()" action="login.php">
+<table boRder="0" bgcolor="WHITE" align="right" cellpadding="10">
+<TR>
+<td COLSPAN="2" ALIGN="CENTER"><P>
+<!-- <IMAGE src="C:\Users\racha\OneDrive\Desktop\MGIT\w\lockk.jpg" STYLE="WIDTH:50%"></P> -->
+</TD></TR>
+ <tr>
+<td COLSPAN="2" ALIGN="CENTER"><b>USERNAME:</b></td></tr>
+<tr>
+<td COLSPAN="2" ALIGN="CENTER"><input type="text"style="font-size:15" placeholder="username" name="uname"></td>
+</tr>
+<tr>
+<td COLSPAN="2" ALIGN="CENTER"><b>PASSWORD:</b></td></tr>
+<tr>
+<td COLSPAN="2" ALIGN="CENTER"><input type="password" style="font-size:15" name="pwd"></td>
+</tr>
+<TR>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+<tr>
+<td colspan="2" align="center">
+<input type="submit" style="font-size:25";"border-radius:15px";value="Submit">
+</td>
+</tr>
+</table>
+</form>
+</BODY>
+<HTML>
